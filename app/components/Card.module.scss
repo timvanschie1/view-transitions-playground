@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: clip;
+  padding: 1.5em;
+  filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.2));
+  border-radius: 1em;
+  border: 1px solid #ccc;
+  color: white;
+  min-height: 15em;
+
+  h2,
+  p {
+    position: relative;
+    filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 1));
+  }
+}
