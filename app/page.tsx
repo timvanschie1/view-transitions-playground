@@ -9,7 +9,9 @@ export default function Home() {
   const [cards, setCards] = useState<CardType[]>(defaultCards);
 
   function handleAddClick() {
-    setCards([...cards, getDummyCard(cards.length + 1)]);
+    document.startViewTransition(() => {
+      setCards([getDummyCard(cards.length + 1), ...cards]);
+    });
   }
 
   return (
