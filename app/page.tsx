@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./page.module.css";
-import { useState } from "react";
+import { startTransition, useState } from "react";
 import { Card, CardType } from "@/app/components/Card";
 import { defaultCards, getDummyCard } from "@/app/components/exampleData";
 
@@ -9,7 +9,7 @@ export default function Home() {
   const [cards, setCards] = useState<CardType[]>(defaultCards);
 
   function handleAddClick() {
-    document.startViewTransition(() => {
+    startTransition(() => {
       setCards([getDummyCard(cards.length + 1), ...cards]);
     });
   }
