@@ -13,7 +13,8 @@
     "prettier": "^3.6.2",
     "react": "19.3.0-canary-93f85932-20251016",
     "react-dom": "19.3.0-canary-93f85932-20251016",
-    "sass-embedded": "^1.93.2"
+    "sass-embedded": "^1.93.2",
+    "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",

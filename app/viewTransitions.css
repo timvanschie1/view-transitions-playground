@@ -1,18 +1,19 @@
-.text {
-  view-transition-class: text;
-}
+/*.text {*/
+/*  view-transition-class: text;*/
+/*}*/
 
 .card {
-  view-transition-class: card;
+  /*view-transition-class: card;*/
+  /*view-transition-group: cards;*/
 
-  &:nth-child(4),
-  &:nth-child(6) {
-    view-transition-class: card cardZ;
+  /*&:nth-child(4),*/
+  /*&:nth-child(6) {*/
+  /*  view-transition-class: card cardZ;*/
 
-    .text {
-      view-transition-class: text textZ;
-    }
-  }
+  /*.text {*/
+  /*  view-transition-class: text textZ;*/
+  /*}*/
+  /*}*/
 }
 
 ::view-transition-group(*) {
@@ -21,26 +22,30 @@
   /*animation-timing-function: cubic-bezier(0, 2.35, 1, -1.54);*/
 }
 
-::view-transition-group(.cardZ) {
-  z-index: 1;
-}
+/*::view-transition-group(cards) {*/
+/*  overflow: hidden;*/
+/*}*/
 
-::view-transition-group(.textZ) {
-  z-index: 2;
-}
+/*::view-transition-group(.cardZ) {*/
+/*  z-index: 1;*/
+/*}*/
+
+/*::view-transition-group(.textZ) {*/
+/*  z-index: 2;*/
+/*}*/
 
 ::view-transition-old(.card),
 ::view-transition-new(.card) {
-  height: 100%;
-  object-fit: cover;
-  overflow: clip;
-  filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.2));
-  border-radius: 1em;
+  /*height: 100%;*/
+  /*object-fit: cover;*/
+  /*filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.2));*/
+  /*overflow: clip;*/
+  /*border-radius: 1em;*/
 }
 
 ::view-transition-new(.card):only-child {
-  animation-name: move-in;
-  transform-origin: top left;
+  /*animation-name: move-in;*/
+  /*transform-origin: top left;*/
 }
 
 @keyframes move-in {

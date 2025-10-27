@@ -2,35 +2,3 @@
   font-family: var(--font-geist-sans);
   padding: min(80px, 3vw);
 }
-
-.addButton {
-  all: unset;
-  margin-bottom: 2em;
-  padding: 0.7em;
-  background: hotpink;
-  color: white;
-  font-weight: 600;
-  font-size: 1.2em;
-  border-radius: 0.5em;
-  filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.3));
-  cursor: pointer;
-}
-
-.cards {
-  --columns: 1;
-  display: grid;
-  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
-  gap: 1em;
-}
-
-@media (min-width: 500px) {
-  .cards {
-    --columns: 2;
-  }
-}
-
-@media (min-width: 1000px) {
-  .cards {
-    --columns: 3;
-  }
-}
